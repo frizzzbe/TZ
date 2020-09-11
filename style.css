@@ -1,0 +1,702 @@
+/* fonts */
+@font-face {
+	font-family: 'Styrene A LC';
+	src: local('Styrene A LC Medium'),
+		url('./fonts/StyreneAWeb-Regular.woff2') format('woff2'),
+		url('./fonts/StyreneAWeb-Regular.woff') format('woff');
+	font-weight: normal;
+}
+@font-face {
+    font-family: 'Styrene A LC';
+    src: local('Styrene A LC Medium'),
+        url('./fonts/StyreneAWeb-Medium.woff2') format('woff2'),
+        url('./fonts/StyreneAWeb-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Regular'), local('TTNormsPro-Regular'),
+        url('./fonts/TTNormsPro-Regular.woff2') format('woff2'),
+        url('./fonts/TTNormsPro-Regular.woff') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Medium'), local('TTNormsPro-Medium'),
+        url('./fonts/TTNormsPro-Medium.woff2') format('woff2'),
+        url('./fonts/TTNormsPro-Medium.woff') format('woff');
+    font-weight: 500;
+}
+/* default styles */
+body{
+	font-family: Styrene A LC;
+	margin: 0;
+	padding: 0;
+	background-color: #FBFBFB;
+}
+.btn-link{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+
+	display: inline-block;
+	background-color: #7DC900;
+	border-radius: 10px;
+	padding: 25px 75px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1640px;
+	width: 85%;
+	margin: 0 auto;
+}
+/* header */
+.main-header{
+	overflow: hidden;
+	background: url('./images/woman.png'),
+				url('./images/grass.png');
+	background-size: 712px, cover;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+}
+.main-header .navigation{
+	padding-top: 77px;
+	display: flex;
+	align-items: baseline;
+}
+.logo{
+	position: relative;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 33px;
+
+	cursor: pointer;
+	white-space: nowrap;
+	color: #000000;
+}
+.logo::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: url('./images/Ellipse 4.png');
+	top: 9px;
+	margin-right: 24px;
+}
+.header-nav{
+	flex-grow: 1;
+}
+.main-navigation{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.main-navigation a{
+	font-family: TT Norms Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	color: #000000;
+}
+.main-navigation a:hover::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #7DC900;
+}
+.register{
+	text-align: right;
+}
+.register .private{
+	display: block;
+
+	font-family: Styrene A LC;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #000000;
+	text-decoration: none;
+}
+.register .private:hover{
+	text-decoration: underline;
+}
+.link{
+	font-family: TT Norms Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #7DC900;
+}
+.content-header{
+	display: flex;
+	justify-content: space-between;
+}
+.heading .offer{
+	font-family: Styrene A LC;
+	width: 710px;
+	margin-top: 170px;
+	font-weight: 500;
+	font-size: 62px;
+	line-height: 81px;
+	color: #000000;
+}
+.offer-detail{
+	font-family: TT Norms Pro;
+	font-size: 22px;
+	line-height: 26px;
+	color: #000000;
+}
+.heading .btn-link{
+	margin-top: 100px;
+}
+.slider-nav{
+	display: flex;
+	margin: 130px 0 89px;
+}
+.slider-nav span{
+	display: block;
+	width: 74px;
+	height: 8px;
+	margin: 0 14px;
+
+	background: #FFFFFF;
+	transition: box-shadow 0.3s;
+	cursor: pointer;
+}
+.slider-nav span:hover{
+	box-shadow: 0 0 7px #FFFFFF;
+}
+.request{
+	width: 513px;
+	height: 811px;
+	position: relative;
+
+	text-align: center;
+	align-self: flex-end;
+	font-size: 16px;
+	background: url('./images/request.png');
+}
+.request::before{
+	position: absolute;
+	left: -240px;
+	bottom: -115px;
+
+	content: "0";
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 302px;
+	color: #FFFFFF;
+}
+.request::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 103px;
+	height: 134px;
+	left: -76px;
+	bottom: -33px;
+
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 102px;
+	color: #FFFFFF;
+
+	background: url('./images/%.png') no-repeat center;
+	background-size: 100% 70%;
+}
+.request-name{
+	margin: 74px auto 0;
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 39px;
+	text-align: center;
+
+	width: 80%;
+	color: #000000;
+}
+.request .btn-link{
+	box-sizing: border-box;
+	margin: 0 auto;
+	min-width: 250px;
+	white-space: nowrap;
+}
+.row{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.request .row:nth-child(1){
+	margin-top: 36px;
+}
+.request .row:nth-child(2){
+	margin-top: 20px;
+}
+.request .row:nth-child(3){
+	margin-top: 39px;
+}
+.request .row *:nth-child(2){
+	width: 212px;
+	align-self: flex-start;
+	text-align: left;
+}
+.request label{
+	font-family: TT Norms Pro;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+.currency{
+	width: 100%;
+	font-family: Styrene A LC;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 34px;
+
+	padding: 16px 35px 16px 21px;
+	background: #FBFBFB;
+	border: none;
+	border-radius: 10px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.select-cont{
+	position: relative;
+}
+.select-cont::after{
+	position: absolute;
+	content: ">";
+	pointer-events: none;
+
+	display: inline-block;
+	width: 14px;
+	height: 8px;
+	right: 0;
+	top: 30px;
+	color: #7DC900;
+	transform: scaleX(1.8) rotate(90deg);
+}
+.request .summ-val,
+.request .summ-days{
+	font-family: Styrene A LC;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 34px;
+
+	width: 212px;
+	box-sizing: border-box;
+	padding: 16px 37px 16px 21px;
+	background: #FBFBFB;
+	border: none;
+	border-radius: 10px;
+}
+.request .summ-val::-webkit-outer-spin-button,
+.request .summ-val::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.request input[type="range"]{
+    width: 100%;
+}
+table.order{
+	font-family: TT Norms Pro;
+	font-size: 14px;
+	line-height: 26px;
+
+	margin-top: 26px;
+	width: 100%;
+}
+.order-prop{
+	text-align: left;
+}
+.order-val{
+	text-align: right;
+	font-weight: 500;
+}
+
+.range{
+	margin-top: 39px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.track{
+	position: relative;
+	width: 100%;
+	height: 0;
+	border: 3px solid #F4F4F4;
+}
+.tracked{
+	position: relative;
+	height: 0;
+	width: 50%;
+	border: 3px solid #7DC900;
+}
+.tracked::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: #FFFFFF;
+
+	border-radius: 50%;
+	border: 3px solid #7DC900;
+	transform: translate(100%, -50%);
+	cursor: pointer;
+}
+.points{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.points .point{
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #AEAEAE;
+}
+
+/* how it works */
+.section-name{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	text-align: left;
+	font-size: 50px;
+	line-height: 66px;
+	color: #000000;
+	margin: 0;
+	margin-top: 58px;
+}
+.how-works{
+	padding-top: 1px;
+	background-color: #ffffff;
+	text-align: center;
+}
+.how-works .actions{
+	margin-top: 71px;
+	padding-bottom: 49px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.how-works img{
+	height: 200px;
+}
+
+/* our products */
+.products-heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 49px auto 67px;
+}
+.products-heading span{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #000000;
+}
+.products-heading .section-name{
+	margin-top: 0;
+}
+.products-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product-item img{
+	max-width: 100%;
+}
+.product-item h3{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 39px;
+	color: #000000;
+}
+.product-item p{
+	width: 370px;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+}
+.product-item{
+	position: relative;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+.product-item .btn-link{
+	position: absolute;
+	margin-top: 26px;
+	bottom: 0;
+}
+
+/* calculation section */
+.calculation-terms .terms h3{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 39px;
+}
+.calculation-terms .terms p{
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+}
+.calculation-terms .terms ul{
+	position: relative;
+	list-style: none;
+}
+.calculation-terms .terms li{
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	margin: 28px 0;
+}
+.calculation-terms .terms li::before{
+	content: "";
+	position: absolute;
+	display: block;
+	transform: translate(-200%, 75%);
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #7DC900;
+}
+.terms{
+	position: relative;
+	box-sizing: border-box;
+	padding-bottom: 30px;
+}
+.terms .condition{
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+
+	text-align: center;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #CDCDCD;
+}
+.calculation-terms{
+	margin-top: 69px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+}
+.calculation-terms > div{
+	background-color: #fff;
+}
+.calculation-terms .tabs{
+	min-width: 580px;
+    margin: 0 65px;
+	flex-grow: 1;
+}
+
+/* calculation tabs */
+.tabs{
+	background-color: #FFFFFF;
+}
+
+.tabs .container{
+    width: 75%;
+}
+.tab-cont{
+	display: flex;
+}
+.tab{
+	flex-grow: 1;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	
+	padding: 25px 0;
+	border:  1px solid #EDEDED;
+	background: #FBFBFB;
+	border-top: none;
+}
+.tab.active{
+	border: none;
+}
+.tab-content-1{
+	border-right: 1px solid #EDEDED;
+}
+.tab-content-1 .row{
+	align-items: baseline;
+}
+.tabs .item{
+	flex-grow: 1;
+	margin-left: 49px;
+}
+.tabs .points{
+	padding: 0;
+}
+
+.arrange span,
+.tabs span{
+	display: inline-block;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 31px;
+}
+.arrange span:nth-child(3){
+	margin-top: 21px;
+}
+.arrange p,
+.tabs p{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 39px;
+	margin: 0;
+	margin-top: 5px;
+}
+.arrange span.disabled,
+.arrange p.disabled{
+	color: #CDCDCD;
+}
+.arrange span.disabled{
+	margin-top: 49px;
+}
+.arrange .btn-link{
+	margin-top: 34px;
+}
+
+/* blog */
+.row.blog-content{
+	margin-top: 80px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.blog .row:first-child{
+	justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.blog .section-name{
+	margin-right: 48px;
+}
+.blog .section-name:not(.active){
+	color: #CDCDCD;
+}
+.blog .blog-item{
+	position: relative;
+	max-width: 495px;
+	padding-bottom: 60px;
+}
+.blog .blog-item img{
+	max-width: 100%;
+}
+.blog .blog-item time{
+	display: block;
+	margin-top: 35px;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #CDCDCD;
+
+}
+.blog-item p,
+.blog-item h3{
+	width: 75%;
+}
+.blog-item h3{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 39px;
+	margin-top: 21px;
+}
+.blog-item p{
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+}
+.blog-item .link{
+	position: absolute;
+	bottom: 25px;
+}
+
+/* footer */
+.main-footer{
+	padding-top: 1px;
+	color: #ffffff;
+	background-color: #3F3F3F;
+}
+.main-footer .logo{
+	color: #ffffff;
+}
+.main-footer .description{
+	max-width: 370px;
+	width: 80%;
+	margin-top: 56px;
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+}
+.main-footer .container{
+	display: flex;
+	margin-top: 76px;
+}
+.main-footer .nav-lists{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 150px;
+}
+.main-footer .nav-list{
+	margin-left: 130px;
+}
+.main-footer .nav-list ul{
+	padding-left: 0;
+	list-style: none;
+}
+.main-footer .nav-list li{
+	margin: 20px auto;
+}
+.main-footer li a{
+	font-family: TT Norms Pro;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	text-decoration: none;
+	color: #fff;
+}
+.main-footer li a:hover{
+	text-decoration: underline;
+}
+.main-footer .heading-list{
+	font-family: Styrene A LC;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+}
