@@ -47,7 +47,7 @@ body{
 	color: #ffffff;
 	text-decoration: none;
 }
-
+/*main-container of the content*/
 .container{
 	max-width: 1640px;
 	width: 85%;
@@ -231,6 +231,8 @@ body{
 	min-width: 250px;
 	white-space: nowrap;
 }
+
+/*universal class for the d-flex elements*/
 .row{
 	position: relative;
 	display: flex;
@@ -327,6 +329,7 @@ table.order{
 	font-weight: 500;
 }
 
+/*input elements styles*/
 .range{
 	margin-top: 39px;
 	display: flex;
